@@ -1,0 +1,200 @@
+body{
+  margin: 0;
+  position: relative;
+  background-color: DarkGrey;
+
+
+  /* !!!below is the nav-bar!!!*/
+  header{
+    background: LightGrey;
+  }
+
+  header::after{
+    content:'';
+    display: table;
+    clear: both;
+  }
+
+
+  .fixed{
+    position: fixed;
+    top: 0
+  }
+
+  .pull-left{
+    float: left;
+  }
+
+  .pull-right{
+    float: right;
+  }
+
+  nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav li{
+    display: inline-block;
+    margin-left: 60px;
+    padding: 25px 0;
+
+    position: relative;
+  }
+
+  nav a{
+    color: White;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  nav a:hover {
+    color: Black;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: Black;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 300ms;
+  }
+
+  nav a:hover::before{
+    width: 100%
+  }
+
+  .container{
+    margin: 0 auto;
+  }
+  /*!!!Above is the nav-bar!!!*/
+
+  .blurb{
+    font-family: "Arial", Sans-serif;
+    font-size: 20px;
+
+    padding: 50px 100px 20px 100px;
+  }
+
+  hr{
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .pic{
+    border-style: solid;
+    border-color: LightGrey;
+    border-width: 6px;
+    border-radius: 3px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  }
+
+  .about{
+    background:url(https://images.unsplash.com/photo-1502740289988-04eddde1556a?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=linus-nylund-340741.jpg&s=c61ad41e1fb375e289e9a3d6f500e218);
+    background-size: cover;
+    height: 522px;
+    padding-top: 30px;
+  }
+
+  h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 80px;
+  }
+
+  h2{
+    font-family: "Verdana", Sans-serif;
+    font-size: 45px;
+
+    border-color: Black;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-radius: 6px;
+
+    width: 27%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.3%;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .portfolio{
+    background: url(https://images.unsplash.com/photo-1434672583789-40c5328ad46a?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=angel-acevedo-22505.jpg&s=2eacffa8ffcc990d24f7cef7b8d97988);
+    background-size: cover;
+    height: 522px;
+    padding-top: 30px;
+  }
+
+  .central{
+    margin-left: 77px;
+    margin-right: auto;
+  }
+
+  .thumbnail{
+    width: 340px;
+    height: 160px;
+
+    border: none;
+    background: none;
+
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .contact{
+    background:url(https://images.unsplash.com/40/whtXWmDGTTuddi1ncK5v_IMG_0097.jpg?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=griffin-keller-385.jpg&s=f7d9a726f75ca2cce12bbf68eb863eba);
+    background-size: cover;
+    height: 522px;
+    padding-top: 30px;
+  }
+
+  h3{
+    font-family: "Verdana", Sans-serif;
+    font-size: 35px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  .btn-default{
+    background-color: LightGrey;
+    border: none;
+    border-radius: 6px;
+
+    padding: 10px;
+    font-size: 1.7em;
+    color: white;
+  }
+
+  .fa{
+    font-size: 25px;
+  }
+
+  #LinkedinIcon{
+    color: rgb(0,127,178);
+  }
+
+  #FacebookIcon{
+     color: rgb(59,89,173);
+  }
+
+  #FreecodecampIcon{
+    color: green;
+  }
+
+  .email{
+    font-family: "Arial", Sans-serif;
+    font-size: 20px;
+  }
+}
