@@ -18,7 +18,7 @@ body{
 
   .fixed{
     position: fixed;
-    top: 0
+    top: 0;
   }
 
   .pull-left{
@@ -68,7 +68,7 @@ body{
   }
 
   nav a:hover::before{
-    width: 100%
+    width: 100%;
   }
 
   .container{
