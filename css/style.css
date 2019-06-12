@@ -1,0 +1,233 @@
+  html {
+    -webkit-box-sizing: border-box;             /* Ensuring box-model support for older broswers */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;            /* Ensuring box-model support for older broswers */
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  
+  body{
+    margin: 0;
+    position: relative;
+    background-color: DarkGrey;
+    font-family: "Arial", sans-serif;
+  }
+
+  /* !!!below is the nav-bar!!!*/
+  header{
+    background: LightGrey;
+  }
+
+  header::after{
+    content:'';
+    display: table;
+    clear: both;
+  }
+
+
+  .fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1;
+  }
+
+  .pull-left{
+    float: left;
+  }
+
+  .pull-right{
+    float: right;
+  }
+
+  nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav li{
+    display: inline-block;
+    margin-left: 6em;
+    padding: 1.5em 0;
+
+    position: relative;
+  }
+
+  nav a{
+    color: White;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+
+  nav a:visited {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5em;
+  }
+
+  nav a:hover {
+    color: Black;
+    text-decoration: none;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: Black;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 300ms;
+  }
+
+  nav a:hover::before{
+    width: 100%;
+  }
+
+  .container{
+    margin: 0 auto;
+  }
+  /*!!!Above is the nav-bar!!!*/
+
+  .blurb{
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+    padding: 0px 100px 20px 100px;
+  }
+
+  hr{
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .pic{
+    border-style: solid;
+    border-color: LightGrey;
+    border-width: 4px;
+    border-radius: 4px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  }
+
+  .about{
+    background-image:url(https://images.unsplash.com/photo-1502740289988-04eddde1556a?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=linus-nylund-340741.jpg&s=c61ad41e1fb375e289e9a3d6f500e218);
+    background-size: cover;
+    height: 100vh;
+    padding-top: 30px;
+  }
+
+  h1{
+    font-family: "Oswald", sans-serif;
+    font-weight: lighter;
+  }
+
+  #hello{
+    margin-top: 120px;
+    padding-left: 120px;
+  }
+
+  h2{
+    text-align: center;
+    font-family: "Verdana", Sans-serif;
+    /* manipulating font-size is uneffectual :/ */
+    font-weight: lighter;
+
+    border-color: Black;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-radius: 6px;
+
+    width: 27%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .portfolio{
+    background-image: url(https://images.unsplash.com/photo-1434672583789-40c5328ad46a?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=angel-acevedo-22505.jpg&s=2eacffa8ffcc990d24f7cef7b8d97988);
+    background-size: cover;
+    height: 100vh;
+    padding-top: 80px;
+  }
+
+  .thumbnail{
+    width: 340px;
+    height: 160px;
+
+    border: none;
+    background: none;
+
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .contact{
+    background-image:url(https://images.unsplash.com/40/whtXWmDGTTuddi1ncK5v_IMG_0097.jpg?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=griffin-keller-385.jpg&s=f7d9a726f75ca2cce12bbf68eb863eba);
+    background-size: cover;
+    height: 100vh;
+    padding-top: 80px;
+  }
+
+  h3{
+    text-align: center;
+    font-family: "Verdana", Sans-serif;
+    font-size: 3rem;
+    font-weight: lighter;
+
+    padding-top: 1rem;
+  }
+
+  .btn-default{
+    background-color: LightGrey;
+    border: none;
+    border-radius: 6px;
+
+    padding: 10px;
+    font-size: 1.7em;
+    color: white;
+  }
+
+  #social-links{
+    text-align: center;
+  }
+
+  .fa{
+    font-size: 25px;
+  }
+
+  #LinkedinIcon{
+    color: rgb(0,127,178);
+  }
+
+  #FacebookIcon{
+     color: rgb(59,89,173);
+  }
+
+  #FreecodecampIcon{
+    color: green;
+  }
+
+  #email{
+    text-align: center;
+    font-family: "Arial", Sans-serif;
+    font-size: 2em;
+  }
