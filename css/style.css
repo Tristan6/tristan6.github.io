@@ -22,12 +22,19 @@
   }
 
   .parallax {
-    background-image: url(../img/stylish-and-sophisticated-assets/el-cortez-1440.jpg);
     position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .p1{
+    background-image: url(../img/stylish-and-sophisticated-assets/el-cortez-1440-Top.jpg);
+  }
+
+  .p2{
+    background-image: url(../img/stylish-and-sophisticated-assets/el-cortez-1440-Bottom.jpg);
   }
 
   /*
@@ -171,7 +178,7 @@ Alternative parallax code
 
   .about{
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     background-color: #7395AE;
     padding-top: 82px;
   }
@@ -225,6 +232,7 @@ Alternative parallax code
 
     margin-left: 10px;
     margin-right: 10px;
+    /* box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23); */
   }
 
   .contact{
