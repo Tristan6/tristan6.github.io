@@ -16,12 +16,8 @@
     font-family: "Arial", sans-serif;
   }
 
-  .transparent{
-      color: transparent;
-      height: 150px;
-  }
-
   .parallax {
+    height: 27vh;
     position: relative;
     background-attachment: fixed;
     background-position: center;
@@ -35,31 +31,6 @@
 
   .p2{
     background-image: url(../img/stylish-and-sophisticated-assets/el-cortez-1440-Bottom.jpg);
-  }
-
-  /*
-Alternative parallax code
-  .parallax{
-    height:100vh;
-    padding-top:20vh;
-    box-sizing: border-box;
-    transform-style: preserve-3d;
-  }
-  
-  .parallax-wrapper::before {
-    content:"";
-    width: 100vw;
-    height: 100vh;
-    top:0;
-    left:0;
-    background-image: url("./img/stylish-and-sophisticated-assets/el-cortez-1440.jpg");
-    position: absolute;
-    z-index: -1;
-    transform:translateZ(-1px) scale(2);
-} */
-
-  .break{
-      height: 100px;
   }
 
   /* !!!below is the nav-bar!!!*/
@@ -153,12 +124,7 @@ Alternative parallax code
     color: #E3E3E3;
     font-size: 20px;
     text-align: justify;
-    padding: 0px 100px 20px 100px;
-  }
-
-  hr{
-    margin-left: 150px;
-    margin-right: 150px;
+    padding: 0vh 7vw 5vh 7vw;
   }
 
   .pic{
@@ -172,8 +138,9 @@ Alternative parallax code
     margin-top: 10%;
   }
 
-  .fancy-symbol{
-    margin-left: 95px;
+  .img-center{
+    display: block;
+    margin: 0 auto;
   }
 
   .about{
@@ -185,31 +152,31 @@ Alternative parallax code
 
   h1{
     font-family: 'Bilbo Swash Caps', cursive;
-    /* font-family: "Oswald", sans-serif; */
     font-weight: lighter;
     font-size: 5.5rem;
   }
 
   #hello{
     color: #E3E3E3;
-    margin-top: 60px;
-    margin-left: 100px;
+    margin-top: 7vh;
+    margin-left: 7vw;
   }
 
   h2{
     font-family: "Oswald", Sans-serif;
-    /* manipulating font-size is uneffectual :/ */
     font-weight: lighter;
     font-size: 43px;
     color: #E3E3E3;
     text-align: center;
 
-    width: 27%;
-    margin-left: 65vw;
-    margin-bottom: 3rem;
-
     padding-top: 3px;
     padding-bottom: 3px;
+  }
+
+  .section-head{
+      margin-left: 75vw;
+      margin-right: 10vw;
+      margin-bottom: 3rem;
   }
 
   .portfolio{
@@ -239,7 +206,11 @@ Alternative parallax code
     background-size: cover;
     height: 90vh;
     background-color: #7395AE;
-    padding-top: 80px;
+    padding-top: 50px;
+  }
+
+  .contact .section-head{
+      margin-bottom: 10vh;
   }
 
   h3{
@@ -288,6 +259,6 @@ Alternative parallax code
 
   #email{
     text-align: center;
-    font-family: "Arial", Sans-serif;
     font-size: 2em;
+    margin-bottom: 5vh;
   }
