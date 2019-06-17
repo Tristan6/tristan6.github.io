@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
+var minifyCSS = require('gulp-csso'); // other options include clean css and css nano
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 
@@ -7,11 +8,13 @@ var reload = browserSync.reload;
 gulp.task('compile-less', function () {
     gulp.src('./src/style.less')
         .pipe(less())
-        .pipe(gulp.dest('./css/'));
+        .pipe(minifyCSS())
+        .pipe(dest('./css'));
 });
+
 // /* Task to watch less changes */
 gulp.task('watch-less', function () {
-    gulp.watch('./src/**/*.less', gulp.series('compile-less'));
+    gulp.watch('./src/*.less', gulp.series('compile-less'));
 });
 
 gulp.task('serve', function () {
@@ -28,18 +31,3 @@ gulp.task('serve', function () {
 
 /* Task when running `gulp` from terminal */
 gulp.task('default', gulp.parallel('watch-less', 'serve'));
-
-
-// const { src, dest, parallel } = require('gulp');
-// const less = require('gulp-less');
-// const minifyCSS = require('gulp-csso');
-
-// function css() {
-//     return src('./*.less')
-//         .pipe(less())
-//         .pipe(minifyCSS())
-//         .pipe(dest('./css'))
-// }
-
-// exports.css = css;
-// exports.default = parallel(css);
