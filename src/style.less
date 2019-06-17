@@ -1,4 +1,4 @@
-  html {
+html {
     -webkit-box-sizing: border-box;             /* Ensuring box-model support for older broswers */
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -15,6 +15,11 @@
     position: relative;
     font-family: "Arial", sans-serif;
   }
+
+  @trim-color: #B1A296;
+  @link-highlight: #5D5C61;
+  @p-text-color: #E3E3E3;
+  @background-color: #557A95;
 
   .parallax {
     height: 27vh;
@@ -35,10 +40,10 @@
 
   /* !!!below is the nav-bar!!!*/
   header{
-    background: #B1A296;
+    background: @trim-color;
   }
 
-  header::after{
+  header::after {
     content:'';
     display: table;
     clear: both;
@@ -90,7 +95,7 @@
   }
 
   nav a:hover {
-    color: #5D5C61;
+    color: @link-highlight;
     text-decoration: none;
   }
 
@@ -98,7 +103,7 @@
     content: '';
     display: block;
     height: 5px;
-    background-color: #5D5C61;
+    background-color: @link-highlight;
 
     position: absolute;
     top: 0;
@@ -121,7 +126,7 @@
   }
 
   .blurb{
-    color: #E3E3E3;
+    color: @p-text-color;
     font-size: 20px;
     text-align: justify;
     padding: 0vh 7vw 5vh 7vw;
@@ -129,7 +134,7 @@
 
   .pic{
     border-style: solid;
-    border-color: #B1A296;
+    border-color: @trim-color;
     border-width: 4px;
     border-radius: 4px;
 
@@ -143,11 +148,20 @@
     margin: 0 auto;
   }
 
-  .about{
+@base-height: 90vh;
+@base-padding-top: 50px;
+
+  .section-base {
     background-size: cover;
-    height: 100vh;
-    background-color: #7395AE;
-    padding-top: 82px;
+    height: @base-height;
+    background-color: @background-color;
+    padding-top: @base-padding-top;
+  }
+
+  .about{
+    .section-base();
+    height: @base-height + 10vh;
+    padding-top: @base-padding-top + 32px;
   }
 
   h1{
@@ -157,7 +171,7 @@
   }
 
   #hello{
-    color: #E3E3E3;
+    color: @p-text-color;
     margin-top: 7vh;
     margin-left: 7vw;
   }
@@ -166,7 +180,7 @@
     font-family: "Oswald", Sans-serif;
     font-weight: lighter;
     font-size: 43px;
-    color: #E3E3E3;
+    color: @p-text-color;
     text-align: center;
 
     padding-top: 3px;
@@ -180,14 +194,13 @@
   }
 
   .portfolio{
-    background-size: cover;
-    height: 95vh;
-    background-color: #557A95;
-    padding-top: 50px;
-  }
+    .section-base();
+    height: @base-height + 5vh;
+    
+    .row{
+        margin-left: 80px;
+    }
 
-  .portfolio .row{
-    margin-left: 80px;
   }
 
   .thumbnail{
@@ -203,14 +216,11 @@
   }
 
   .contact{
-    background-size: cover;
-    height: 90vh;
-    background-color: #7395AE;
-    padding-top: 50px;
-  }
+    .section-base();
 
-  .contact .section-head{
-      margin-bottom: 10vh;
+    .section-head{
+        margin-bottom: 10vh;
+    }
   }
 
   h3{
@@ -218,7 +228,7 @@
     font-weight: lighter;
     text-align: center;
     font-size: 3rem;    
-    color: #E3E3E3;
+    color: @p-text-color;
 
     padding-top: 1rem;
   }
@@ -238,7 +248,7 @@
   }
 
   #social-links a{
-      color: #5D5C61;
+      color: @link-highlight;
   }
 
   .fa{
