@@ -9,7 +9,7 @@ gulp.task('compile-less', function () {
     gulp.src('./src/style.less')
         .pipe(less())
         .pipe(minifyCSS())
-        .pipe(dest('./css'));
+        .pipe(gulp.dest('./css'));
 });
 
 // /* Task to watch less changes */

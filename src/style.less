@@ -207,12 +207,14 @@ html {
     width: 340px;
     height: 160px;
 
+    padding: 0;
     border: none;
+    border-radius: 0;
     background: none;
 
     margin-left: 10px;
     margin-right: 10px;
-    /* box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23); */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.8);
   }
 
   .contact{
@@ -251,10 +253,6 @@ html {
       color: @link-highlight;
   }
 
-  .fa{
-    font-size: 25px;
-  }
-
   #LinkedinIcon{
     color: rgb(0,127,178);
   }
@@ -269,6 +267,10 @@ html {
 
   #email{
     text-align: center;
-    font-size: 2em;
     margin-bottom: 5vh;
+  }
+
+  #email a{
+    color: white;
+    font-size: 2em;
   }
