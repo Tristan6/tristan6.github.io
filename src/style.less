@@ -294,6 +294,26 @@ html {
     font-size: 2em;
   }
 
+  @media (max-height: 740px) and (max-width: 420px) {
+    .about {
+        height: @base-height + 45vh;
+    }
+
+    .portfolio {
+        height: @base-height + 45vh;
+    }
+  }
+
+  @media (max-height: 639px) and (max-width: 420px) {
+    .about {
+        height: @base-height + 80vh;
+    }
+
+    .portfolio {
+        height: @base-height + 80vh;
+    }
+  }
+
   @media (min-width: 768px) {
     .Desktop,.Mobile {
         display: none;
