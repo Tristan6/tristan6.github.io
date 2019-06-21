@@ -25,9 +25,10 @@ gulp.task('serve', function () {
             baseDir: "./"
         }
     });
+    gulp.watch("./src/*.less").on("change", gulp.series('compile-less'));
     gulp.watch("./src/*.less").on("change", reload);
     gulp.watch("./*.html").on("change", reload);
 });
 
 /* Task when running `gulp` from terminal */
-gulp.task('default', gulp.parallel('watch-less', 'serve'));
+gulp.task('default', gulp.series('serve'));
