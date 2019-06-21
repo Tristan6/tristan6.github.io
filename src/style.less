@@ -19,7 +19,21 @@ html {
   @trim-color: #B1A296;
   @link-highlight: #5D5C61;
   @p-text-color: #E3E3E3;
-  @background-color: #557A95;
+  @background-color: #7395AE;
+  @portfolio-color: #557A95;
+
+  .center {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .Desktop, .Tablet {
+    display: none;
+  }
+
+  .Mobile {
+    display: block;
+  }   
 
   .parallax {
     height: 27vh;
@@ -58,14 +72,6 @@ html {
     z-index: 1;
   }
 
-  .pull-left{
-    float: left;
-  }
-
-  .pull-right{
-    float: right;
-  }
-
   nav ul{
     margin: 0;
     padding: 0;
@@ -78,6 +84,15 @@ html {
     padding: 1.5em 0;
 
     position: relative;
+  }
+
+  .pull-left{
+    float: unset;
+    .center();
+  }
+
+  .pull-right{
+    display: none;
   }
 
   nav a{
@@ -119,33 +134,6 @@ html {
     margin: 0 auto;
   }
 
-  p{
-      font-family: 'Open Sans', sans-serif;
-  }
-
-  .blurb{
-    color: @p-text-color;
-    font-size: 20px;
-    text-align: justify;
-    padding: 0vh 7vw 5vh 7vw;
-  }
-
-  .pic{
-    border-style: solid;
-    border-color: @trim-color;
-    border-width: 4px;
-    border-radius: 4px;
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-  }
-
-  .img-center{
-    display: block;
-    margin: 0 auto;
-  }
-
 @base-height: 90vh;
 @base-padding-top: 50px;
 
@@ -168,6 +156,40 @@ html {
     font-size: 5.5rem;
   }
 
+  p{
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .blurb{
+    color: @p-text-color;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0vh 7vw 5vh 7vw;
+  }
+
+  .pic{
+    border-style: solid;
+    border-color: @trim-color;
+    border-width: 4px;
+    border-radius: 4px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  }
+
+  .col-pic {
+    width: 0%;
+  }
+
+  .mobile-pic {
+    width: 100%;
+  }
+
+  .col-blurb {
+    width: 100%;
+  }
+
   #hello{
     color: @p-text-color;
     margin-top: 7vh;
@@ -186,32 +208,30 @@ html {
   }
 
   .section-head{
-      margin-left: 75vw;
-      margin-right: 10vw;
-      margin-bottom: 3rem;
-  }
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
 
   .portfolio{
     .section-base();
     height: @base-height + 5vh;
-    
-    .row{
-        margin-left: 80px;
-    }
+    background-color: @portfolio-color;
 
+    .row, .row a {
+        margin: 0 auto;
+    }
   }
 
   .thumbnail{
-    width: 340px;
-    height: 160px;
+    width: 280px;
+    height: 180px;
 
     padding: 0;
     border: none;
     border-radius: 0;
     background: none;
 
-    margin-left: 10px;
-    margin-right: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.8);
   }
 
@@ -223,6 +243,7 @@ html {
     }
   }
 
+  // Does not need to be changed
   h3{
     font-family: "Verdana", Sans-serif;
     font-weight: lighter;
@@ -271,4 +292,85 @@ html {
   #email a{
     color: white;
     font-size: 2em;
+  }
+
+  @media (min-width: 768px) {
+    .Desktop,.Mobile {
+        display: none;
+    }
+
+    .Tablet {
+        display: block;
+    }
+
+    .pull-right{
+        float: right;
+        display: block;
+    }
+
+    .col-blurb {
+        width: 66.66666667%;
+    }
+
+    .col-pic {
+        width: 33.33333333%;
+        padding-right: 15px;
+    }
+
+    .mobile-pic {
+        width: 0%;
+      }
+
+    #hello {
+        margin-top: 10vh;
+    }
+
+    .pic {
+        margin-top: 10vh;
+    }
+
+    .section-head{
+        margin-left: 75vw;
+        margin-right: 3vw;
+        margin-bottom: 3rem;
+    }
+
+    .thumbnail{
+        width: 340px;
+        height: 160px;
+
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .Mobile, .Tablet {
+        display: none;
+    }
+    
+    .Desktop {
+        display: block;
+    }    
+
+    .pic {
+        margin-top: 10%;
+    }
+
+    .section-head{
+        margin-right: 10vw;
+    }
+
+    .portfolio .row{
+        margin-left: 80px;
+        a {
+            margin: unset;
+        }
+    }    
+  } 
+
+  @media (min-width: 1220px) {
+    .col-pic {
+        padding-right: unset;
+    }
   }
