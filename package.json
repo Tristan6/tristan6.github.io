@@ -1,27 +1,31 @@
 {
-    "name": "personal-website",
-    "description": "A website showing off front-end and data viz skills.",
-    "version": "1.0.0",
-    "main": "gulpfile.js",
-    "devDependencies": {
-        "browser-sync": "^2.26.7",
-        "gulp": "^4.0.2",
-        "gulp-csso": "^3.0.1",
-        "gulp-less": "^4.0.1",
-        "less": "^3.9.0"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Tristan6/personal-website.git"
-    },
-    "author": "Tristan Macelli",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/Tristan6/personal-website/issues"
-    },
-    "homepage": "https://github.com/Tristan6/personal-website#readme",
-    "dependencies": {}
+  "name": "personal-website",
+  "description": "A website showing off front-end and data viz skills.",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^3.0.1",
+    "gulp-less": "^4.0.1",
+    "less": "^3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tristan6/personal-website.git"
+  },
+  "author": "Tristan Macelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tristan6/personal-website/issues"
+  },
+  "homepage": "https://github.com/Tristan6/personal-website#readme",
+  "dependencies": {},
+  "keywords": [
+    "personal",
+    "portfolio"
+  ]
 }
