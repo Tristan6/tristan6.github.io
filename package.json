@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "main": "gulpfile.js",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-csso": "^3.0.1",
     "gulp-less": "^4.0.1",
-    "less": "^3.9.0",
+    "less": "^3.13.1",
     "mixin-deep": "^2.0.1",
     "set-value": "^3.0.2"
   },
