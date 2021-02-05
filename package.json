@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tristanmacelli/personal-website.git"
+    "url": "git+https://github.com/tristanmacelli/tristanmacelli.github.io.git"
   },
   "author": "Tristan Macelli",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tristanmacelli/personal-website/issues"
+    "url": "https://github.com/tristanmacelli/tristanmacelli.github.io/issues"
   },
-  "homepage": "https://github.com/tristanmacelli/personal-website#readme",
+  "homepage": "https://github.com/tristanmacelli/tristanmacelli.github.io#readme",
   "dependencies": {},
   "keywords": [
     "personal",
