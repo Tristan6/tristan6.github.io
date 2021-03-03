@@ -1,7 +1,75 @@
 {
   "name": "personal-website",
-  "description": "A website showing off front-end and data viz skills.",
   "version": "1.0.0",
+  "private": true,
+  "description": "A website showing off front-end and data viz skills.",
+  "author": {
+    "name": "Tristan Macelli"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "typescript": "^4.2.2",
+    "vue": "^3.0.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "^4.5.11",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/eslint-config-typescript": "^5.1.0",
+    "autoprefixer": "^9.8.6",
+    "axios": "^0.21.1",
+    "eslint": "^6.6.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "less": "^3.13.1",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "@vue/standard",
+      "@vue/typescript/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 12
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "_id": "personal-website@1.0.0",
+  "bugs": {
+    "url": "https://github.com/tristanmacelli/tristanmacelli.github.io/issues"
+  },
+  "homepage": "https://github.com/tristanmacelli/tristanmacelli.github.io#readme",
+  "keywords": [
+    "personal",
+    "portfolio"
+  ],
+  "license": "ISC",
   "paths": {
     "src": {
       "css": "./src/"
@@ -14,40 +82,9 @@
       "tailwind": "./tailwind.config.js"
     }
   },
-  "devDependencies": {
-    "axios": "^0.21.1",
-    "browser-sync": "^2.26.14",
-    "less": "^3.13.1",
-    "mixin-deep": "^2.0.1",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.6",
-    "set-value": "^3.0.2"
-  },
-  "scripts": {
-    "sync": "browser-sync start --server --files \"**/*\"",
-    "dev": "postcss css/style.tailwind.css --output css/style.css",
-    "watch:dev": "npm run dev -w",
-    "watch": "run-p watch:dev sync",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tristanmacelli/tristanmacelli.github.io.git"
-  },
-  "author": "Tristan Macelli",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tristanmacelli/tristanmacelli.github.io/issues"
-  },
-  "homepage": "https://github.com/tristanmacelli/tristanmacelli.github.io#readme",
-  "dependencies": {
-    "autoprefixer": "^10.2.4",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.0.3",
-    "vue": "^3.0.7"
-  },
-  "keywords": [
-    "personal",
-    "portfolio"
-  ]
+  }
 }
