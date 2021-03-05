@@ -23,13 +23,25 @@
           TailwindCSS</a>.
       </p>
       <div class="flex gap-x-2 justify-center sm:float-right">
-        <a class="focus:outline-none hover:bg-gray-200 border-0 rounded-3xl" href="https://www.linkedin.com/in/tristan-macelli/" target="_blank">
+        <a
+          class="focus:outline-none hover:bg-gray-200 border-0 rounded-3xl"
+          href="https://www.linkedin.com/in/tristan-macelli/"
+          target="_blank"
+        >
           <img class="p-2 w-10 h-10" src="@/assets/img/icons/linkedin.png" alt="">
         </a>
-        <a class="focus:outline-none hover:bg-gray-200 border-0 rounded-3xl" href="https://www.facebook.com/tristan.macelli" target="_blank">
+        <a
+          class="focus:outline-none hover:bg-gray-200 border-0 rounded-3xl"
+          href="https://www.facebook.com/tristan.macelli"
+          target="_blank"
+        >
           <img class="p-2 w-10 h-10" src="@/assets/img/icons/facebook.png" alt="">
         </a>
-        <a class="focus:outline-none hover:bg-gray-200 border-0 rounded-3xl" href="https://github.com/tristanmacelli" target="_blank">
+        <a
+          class="focus:outline-none hover:bg-gray-200 border-0 rounded-3xl"
+          href="https://github.com/tristanmacelli"
+          target="_blank"
+        >
           <img class="p-2 w-10 h-10" src="@/assets/img/icons/github.png" alt="">
         </a>
       </div>
