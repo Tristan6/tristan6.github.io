@@ -40,11 +40,6 @@ export default defineComponent({
       type: String,
       required: true
     }
-  },
-  created: function () {
-    // console.log('this.altText', this.altText)
-    // console.log('this.imgSrc', this.imgSrc)
-    // console.log('this.link', this.link)
   }
 })
 </script>

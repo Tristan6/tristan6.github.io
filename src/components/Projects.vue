@@ -27,13 +27,6 @@ export default defineComponent({
   },
   data () {
     return {
-      proy: {
-        altText:
-          'A preview screenshot linking to my private messaging web app, Cleartrace',
-        imgSrc: 'project-0.png',
-        link: 'https://slack.tristanmacelli.com/'
-      },
-      imgSrc: '@/assets/img/projects/project-0.png',
       alts: [
         'A preview screenshot linking to my private messaging web app, Cleartrace',
         'A preview screenshot linking to my Postcomet website',
@@ -70,7 +63,6 @@ export default defineComponent({
       }
       this.projects.push(proj)
     })
-    console.log(this.proy.imgSrc)
   }
 })
 </script>
