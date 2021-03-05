@@ -1,27 +1,28 @@
 <template>
-  <header class="w-full h-16 z-10 fixed top-0 left-0 bg-gray-200">
-    <div class="my-auto">
-      <nav class="pt-4 sm:mx-80">
-        <p class="w-32 py-1 sm:float-left cursor-pointer text-purple-700 font-bold">
-          Tristan Macelli
-        </p>
-        <ul class="w-min sm:float-right flex gap-x-6 list-none m-0">
-          <li class="nav-btn">
-            <a href="#about">
-              Home
-            </a>
-          </li>
-          <li class="nav-btn">
-            <a href="#projects">
-              Projects
-            </a>
-          </li>
-          <li class="nav-btn">
-            <a href="#contact">
-              Contact
-            </a>
-          </li>
-        </ul>
+  <header class="w-full z-10 sticky top-0 mb-6 bg-gray-200">
+    <div class="flex flex-col sm:flex-row items-center justify-between max-w-screen-lg py-3 mx-auto">
+      <a
+        class="w-32 py-1 cursor-pointer text-purple-700 font-bold"
+        href="#"
+      >
+        Tristan Macelli
+      </a>
+      <nav class="flex flex-wrap items-center justify-center gap-x-6 m-0">
+        <a
+          class="nav-btn"
+          href="#about">
+          Home
+        </a>
+        <a
+          class="nav-btn"
+          href="#projects">
+          Projects
+        </a>
+        <a
+          class="nav-btn"
+          href="#contact">
+          Contact
+        </a>
       </nav>
     </div>
   </header>
@@ -39,6 +40,6 @@ export default defineComponent({
 
 <style scoped>
   .nav-btn {
-    @apply w-min px-2 py-1 rounded-md sm:inline-block font-semibold text-gray-600 hover:bg-gray-300 cursor-pointer hidden;
+    @apply w-min px-2 py-1 rounded-md sm:inline-block font-semibold text-gray-600 hover:bg-gray-300 cursor-pointer;
   }
 </style>

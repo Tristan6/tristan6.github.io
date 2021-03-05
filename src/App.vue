@@ -1,11 +1,11 @@
 <template>
-  <div class="h-screen pt-10">
+  <div class="">
     <Navigation />
-    <div class="flex flex-col gap-y-40 px-10 sm:px-80">
+    <main class="flex flex-col gap-y-40 max-w-screen-lg mx-auto px-4">
       <About />
       <Projects />
       <Contact />
-    </div>
+    </main>
   </div>
 </template>
 
