@@ -1,6 +1,6 @@
 // tailwind.config.js
 module.exports = {
-  purge: ['./index.html'],
+  purge: ['./index.html', './src/**/*.{vue,js}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {}
