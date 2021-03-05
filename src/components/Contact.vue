@@ -1,10 +1,12 @@
 <template>
   <div id="contact" class="flex flex-col">
-    <h2 class="text-black text-left text-3xl font-bold pb-4">Contact</h2>
-    <p class="text-left">If you have any questions regarding the projects listed here or just want to say hello, feel free to contact me</p>
+    <SectionHead sectionTitle="Contact">
+      If you have any questions regarding the projects listed here or just want to say hello,
+      feel free to contact me
+    </SectionHead>
     <a
       href="mailto:tristanmacelli@gmail.com"
-      class="hover:underline py-5 font-bold text-left text-purple-700"
+      class="hover:underline font-bold text-left text-purple-700"
     >
       tristanmacelli@gmail.com
     </a>
@@ -51,9 +53,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import SectionHead from '../components/SectionHead.vue'
 export * from './Contact.vue'
 
 export default defineComponent({
-  name: 'Contact'
+  name: 'Contact',
+  components: {
+    SectionHead
+  }
 })
 </script>

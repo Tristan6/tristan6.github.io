@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <Navigation />
-    <main class="flex flex-col gap-y-40 max-w-screen-lg mx-auto px-4">
+    <main class="flex flex-col gap-y-20 max-w-screen-lg mx-auto px-4">
       <About />
       <Projects />
       <Contact />

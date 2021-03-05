@@ -1,6 +1,6 @@
 <template>
   <div id="about" class="h-full flex flex-col sm:flex-row gap-y-10 sm:gap-x-20">
-      <div class="order-last sm:order-none flex-grow pt-20">
+      <div class="order-last sm:order-none flex-grow">
         <h1 class="text-black text-left text-3xl sm:text-6xl text">Hi, I'm <br/>
         <strong class="text-purple-700">Tristan Macelli</strong>.</h1>
         <p class="text-justify">

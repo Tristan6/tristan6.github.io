@@ -1,8 +1,14 @@
 <template>
   <div id="projects" class="pt-8 h-full">
-    <h2 class="text-black text-left text-3xl font-bold pb-4">
-      Development Projects
-    </h2>
+    <SectionHead sectionTitle="Development Projects">
+      Here is a collection of projects I have contributed to. You can find more on my
+      <a
+        class="text-purple-700 hover:underline"
+        href="https://github.com/tristanmacelli"
+        target="_blank"
+      >
+      GitHub</a>.
+    </SectionHead>
     <div class="grid grid-cols-1 gap-y-4 sm:grid-cols-3 sm:gap-12">
       <project
         v-for="proj in projects"
@@ -18,12 +24,14 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Project, { ProjectData } from './Project.vue'
+import SectionHead from './SectionHead.vue'
 export * from './Projects.vue'
 
 export default defineComponent({
   name: 'Projects',
   components: {
-    Project
+    Project,
+    SectionHead
   },
   data () {
     return {

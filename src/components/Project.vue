@@ -2,7 +2,8 @@
   <a
     class="rounded-md shadow"
     :href="link"
-    target="_blank">
+    target="_blank"
+  >
     <img
       class="rounded-md"
       :src="require('@/assets/img/projects/' + imgSrc)"
