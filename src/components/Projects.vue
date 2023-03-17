@@ -3,7 +3,7 @@
     <SectionHead sectionTitle="Development Projects">
       Here is a collection of projects I have contributed to. You can find more on my
       <a
-        class="text-purple-700 hover:underline"
+        class="text-highlight hover:underline"
         href="https://github.com/tristanmacelli"
         target="_blank"
       >
@@ -28,7 +28,7 @@ import SectionHead from './SectionHead.vue'
 export * from './Projects.vue'
 
 export default defineComponent({
-  name: 'Projects',
+  name: 'ProjectSection',
   components: {
     Project,
     SectionHead

@@ -6,7 +6,7 @@
     </SectionHead>
     <a
       href="mailto:tristanmacelli@gmail.com"
-      class="hover:underline font-bold text-left text-purple-700"
+      class="hover:underline font-bold text-left text-highlight"
     >
       tristanmacelli@gmail.com
     </a>
@@ -57,7 +57,7 @@ import SectionHead from '../components/SectionHead.vue'
 export * from './Contact.vue'
 
 export default defineComponent({
-  name: 'Contact',
+  name: 'ContactSection',
   components: {
     SectionHead
   }

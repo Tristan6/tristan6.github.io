@@ -27,7 +27,7 @@ export class ProjectData {
 }
 
 export default defineComponent({
-  name: 'Project',
+  name: 'ProjectDetail',
   props: {
     altText: {
       type: String,
