@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full z-10 sticky top-0 mb-6 bg-gray-200">
+  <header class="w-full z-10 sticky top-0 mb-6 dark:bg-gray-200">
     <div class="flex flex-col sm:flex-row items-center justify-between max-w-screen-lg py-3 mx-auto">
       <a
         class="w-32 py-1 cursor-pointer text-highlight font-bold"
