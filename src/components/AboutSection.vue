@@ -13,7 +13,7 @@
           buttons in the navigation bar above to learn more about my projects or reach out to me.
         </p>
       </div>
-      <div class="self-center w-2/3 bg-highlight">
+      <div class="self-center w-52 sm:w-300 md:w-200 lg:w-160 bg-highlight">
         <img
           class=" transform translate-x-5 translate-y-3"
           src="@/assets/img/me/UWJuniorComposite350.jpg"
