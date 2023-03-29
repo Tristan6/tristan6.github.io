@@ -10,14 +10,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
+
 export default defineComponent({
-  name: 'SectionHead',
-  props: {
-    sectionTitle: {
-      type: String,
-      required: true
-    }
-  }
+  name: 'SectionHead'
 })
+</script>
+
+<script lang="ts" setup>
+import { defineProps } from 'vue';
+
+defineProps<{
+  sectionTitle: string
+}>()
 </script>

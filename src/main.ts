@@ -16,6 +16,6 @@ app.config.warnHandler = function (msg, vm, trace) {
     console.log(msg, vm, trace);
     // `trace` is the component hierarchy trace
 };
-  
+
 app.use(router);
 app.mount('#app')

@@ -22,12 +22,3 @@
       </div>
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-export * from './About.vue'
-
-export default defineComponent({
-  name: 'AboutSection'
-})
-</script>

@@ -1,46 +1,35 @@
 <template>
   <a
     class="rounded-md shadow"
-    :href="link"
+    :href="project.link"
     target="_blank"
   >
     <img
       class="rounded-md"
-      :src="require('@/assets/img/projects/' + imgSrc)"
-      :alt="altText"
+      :src="require('@/assets/img/projects/' + project.src)"
+      :alt="project.alt"
     >
   </a>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-export class ProjectData {
-  public alt: string;
-  public href: string;
-  public src: string;
-
-  constructor (alt: string, href: string, src: string) {
-    this.alt = alt
-    this.href = href
-    this.src = src
-  }
-}
+import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'ProjectCard',
-  props: {
-    altText: {
-      type: String,
-      required: true
-    },
-    imgSrc: {
-      type: String,
-      required: true
-    },
-    link: {
-      type: String,
-      required: true
-    }
-  }
+  name: 'ProjectCard'
 })
+</script>
+
+<script lang="ts" setup>
+import { defineProps } from 'vue';
+
+export interface ProjectData {
+  alt: string;
+  link: string;
+  src: string;
+}
+
+defineProps<{
+  project: ProjectData
+}>()
 </script>

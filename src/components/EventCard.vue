@@ -2,57 +2,43 @@
     <div class="grid bg-zinc-600 pt-4 px-5">
       <img
         class="h-fit rounded-md"
-        :src="require('@/assets/img/events/' + imgSrc)"
-        :alt="altText"
+        :src="require('@/assets/img/events/' + event.src)"
+        :alt="event.alt"
       >
       <button
-        class="justify-self-center text-zinc-300 font-semibold bg-black my-3 w-fit h-fit px-6 py-2 rounded-md drop-shadow-md"
+        class="justify-self-center text-zinc-300 font-semibold bg-black my-3 px-6 py-2 rounded-md drop-shadow-md"
         @click="RouteToEvent"
       >
       More Details
       </button>
     </div>
 </template>
-  
-  <script lang="ts">
-  import { defineComponent } from 'vue'
-  import { useRouter } from "vue-router";
 
-  export class EventData {
-    public alt: string;
-    public name: string;
-    public src: string;
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'EventCard'
+})
+</script>
   
-    constructor (alt: string, name: string, src: string) {
-      this.alt = alt
-      this.name = name
-      this.src = src
-    }
-  }
-  
-  export default defineComponent({
-    name: 'EventCard',
-    props: {
-      altText: {
-        type: String,
-        required: true
-      },
-      imgSrc: {
-        type: String,
-        required: true
-      },
-      name: {
-        type: String,
-        required: true
-      }
-    },
-    setup(props) {
-      const router = useRouter();
-      const RouteToEvent = () => {
-          router.push({ path: `/event/${props.name}` });
-      };
-      return { RouteToEvent };
-    }
-  })
-  </script>
+<script lang="ts" setup>
+import { useRouter } from "vue-router";
+import { defineProps } from 'vue';
+
+export interface EventData {
+  alt: string;
+  name: string;
+  src: string;
+}
+
+const props = defineProps<{
+  event: EventData;
+}>()
+
+const router = useRouter();
+const RouteToEvent = () => {
+    router.push({ path: `/event/${props.event.name}` });
+};
+</script>
   

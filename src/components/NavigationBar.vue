@@ -28,16 +28,6 @@
   </header>
 </template>
 
-<script lang="ts">
-
-import { defineComponent } from 'vue'
-export * from './Navigation.vue'
-
-export default defineComponent({
-  name: 'NavigationPane'
-})
-</script>
-
 <style lang="postcss" scoped>
   .nav-btn {
     @apply w-min px-2 py-1 rounded-md sm:inline-block font-semibold text-gray-600 hover:bg-gray-300 cursor-pointer;

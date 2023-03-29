@@ -53,13 +53,12 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import SectionHead from '../components/SectionHead.vue'
-export * from './Contact.vue'
 
 export default defineComponent({
-  name: 'ContactSection',
-  components: {
-    SectionHead
-  }
+  name: 'ContactSection'
 })
+</script>
+
+<script lang="ts" setup>
+import SectionHead from '../components/SectionHead.vue'
 </script>
