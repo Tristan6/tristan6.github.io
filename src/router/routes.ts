@@ -1,8 +1,8 @@
 import { RouteRecordRaw } from "vue-router";
 
-import Splash from "@/views/Splash.vue";
-import Portfolio from "@/views/Portfolio.vue";
-import Events from "@/views/Events.vue";
+import Splash from "@/views/SplashView.vue";
+import Portfolio from "@/views/PortfolioView.vue";
+import Events from "@/views/EventsView.vue";
 import RoutesNames from "./routesNames";
 
 const routes: RouteRecordRaw[] = [
