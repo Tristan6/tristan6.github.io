@@ -21,5 +21,10 @@ npm run build
 npm run lint
 ```
 
+### Builds and Deploys the project to production
+```
+npm run deploy
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

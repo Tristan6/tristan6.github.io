@@ -13,6 +13,9 @@ module.exports = {
         'picacho': "url('@/assets/img/picacho-sidestream.png')",
         'picacho-extended': "url('@/assets/img/picacho-sidestream-extended.png')",
       },
+      width: {
+        '112': '28rem',
+      }
     }
   },
   variants: {
