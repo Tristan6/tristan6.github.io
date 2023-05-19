@@ -2,7 +2,7 @@ import { RouteRecordRaw } from "vue-router";
 
 import Splash from "@/views/SplashView.vue";
 import Portfolio from "@/views/PortfolioView.vue";
-import Events from "@/views/EventsView.vue";
+import NotFound from "@/components/NotFound.vue";
 import RoutesNames from "./routesNames";
 
 const routes: RouteRecordRaw[] = [
@@ -15,19 +15,19 @@ const routes: RouteRecordRaw[] = [
   path: "/portfolio",
   name: RoutesNames.portfolio,
   component: Portfolio,
-  // route level code-splitting
-  // this generates a separate chunk (about.[hash].js) for this route
-  // which is lazy-loaded when the route is visited.
-  // component: () =>
-  //   import(/* webpackChunkName: "about" */ "../views/Portfolio.vue"),
 },
 {
   path: "/events",
   name: RoutesNames.events,
-  component: Events,
+  component: () =>
+  import(/* webpackChunkName: "about" */ "../views/EventsView.vue"),
 },
 // To serve for real not found paths (rather than manual reload paths)
-// { path: '*', component: NotFoundComponent }
+{
+  path: '/:pathMatch(.*)*',
+  name: RoutesNames.notFound,
+  component: NotFound,
+},
 ];
 
 export default routes;

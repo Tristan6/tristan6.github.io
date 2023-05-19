@@ -4,12 +4,14 @@ export interface IRoutesNames {
   splash: string;
   portfolio: string;
   events: string;
+  notFound: string;
 }
 
 const routesNames: Readonly<IRoutesNames> = {
   splash: "splash",
   portfolio: "portfolio",
   events: "events",
+  notFound: "not found",
 };
 
 // declare module "vue/types/vue" {
