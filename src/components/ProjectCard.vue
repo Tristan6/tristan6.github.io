@@ -6,7 +6,7 @@
   >
     <img
       class="rounded-md"
-      :src="require('@/assets/img/projects/' + project.src)"
+      :src="`src/assets/img/projects/${project.src}`"
       :alt="project.alt"
     >
   </a>
@@ -16,20 +16,14 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'ProjectCard'
-})
+  name: 'ProjectCard',
+});
 </script>
 
 <script lang="ts" setup>
-import { defineProps } from 'vue';
-
-export interface ProjectData {
-  alt: string;
-  link: string;
-  src: string;
-}
+import { ProjectData } from '@/types';
 
 defineProps<{
-  project: ProjectData
-}>()
+  project: ProjectData;
+}>();
 </script>

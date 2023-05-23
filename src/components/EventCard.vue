@@ -2,7 +2,7 @@
     <div class="grid bg-zinc-600 pt-4 px-5">
       <img
         class="h-fit rounded-md"
-        :src="require('@/assets/img/events/' + event.src)"
+        :src="`src/assets/img/events/${event.src}`"
         :alt="event.alt"
       >
       <button
@@ -24,13 +24,7 @@ export default defineComponent({
   
 <script lang="ts" setup>
 import { useRouter } from "vue-router";
-import { defineProps } from 'vue';
-
-export interface EventData {
-  alt: string;
-  name: string;
-  src: string;
-}
+import { EventData } from "@/types";
 
 const props = defineProps<{
   event: EventData;

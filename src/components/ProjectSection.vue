@@ -10,11 +10,11 @@
       GitHub</a>.
     </SectionHead>
     <div class="grid grid-cols-1 gap-y-4 sm:grid-cols-3 sm:gap-12">
-      <ProjectCard
+      <project-card
         v-for="proj in projects"
         :key="proj.link"
         :project="proj"
-      ></ProjectCard>
+      ></project-card>
     </div>
   </div>
 </template>
@@ -28,8 +28,9 @@ export default defineComponent({
 </script>
 
 <script lang="ts" setup>
-import ProjectCard, { ProjectData } from './ProjectCard.vue'
+import ProjectCard from './ProjectCard.vue'
 import SectionHead from '@/components/SectionHead.vue'
+import { ProjectData } from '@/types';
 
 const projects: ProjectData[] = [
   {
