@@ -1,1 +1,1 @@
-declare const App
+declare const App;

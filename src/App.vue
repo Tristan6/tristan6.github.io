@@ -5,12 +5,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-export * from './App.vue'
+import { defineComponent } from "vue";
+export * from "./App.vue";
 
 export default defineComponent({
-  name: 'App'
-})
+  name: "App",
+});
 </script>
 
 <style>

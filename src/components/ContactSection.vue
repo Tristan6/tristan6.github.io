@@ -1,8 +1,8 @@
 <template>
   <div id="contact" class="flex flex-col">
     <SectionHead sectionTitle="Contact">
-      If you have any questions regarding the projects listed here or just want to say hello,
-      feel free to contact me
+      If you have any questions regarding the projects listed here or just want
+      to say hello, feel free to contact me
     </SectionHead>
     <a
       href="mailto:tristanmacelli@gmail.com"
@@ -17,12 +17,15 @@
           class="underline text-gray-500 hover:text-gray-600"
           href="http://vuejs.org/"
         >
-          Vue</a> &amp;
+          Vue</a
+        >
+        &amp;
         <a
           class="underline text-gray-500 hover:text-gray-600"
           href="https://tailwindcss.com/"
         >
-          TailwindCSS</a>.
+          TailwindCSS</a
+        >.
       </p>
       <div class="flex gap-x-2 justify-center sm:float-right">
         <a
@@ -30,21 +33,33 @@
           href="https://www.linkedin.com/in/tristan-macelli/"
           target="_blank"
         >
-          <img class="p-2 w-10 h-10" src="@/assets/img/icons/linkedin.png" alt="">
+          <img
+            class="p-2 w-10 h-10"
+            src="@/assets/img/icons/linkedin.png"
+            alt=""
+          />
         </a>
         <a
           class="focus:outline-none hover:bg-gray-200 border-0 rounded-3xl"
           href="https://www.facebook.com/tristan.macelli"
           target="_blank"
         >
-          <img class="p-2 w-10 h-10" src="@/assets/img/icons/facebook.png" alt="">
+          <img
+            class="p-2 w-10 h-10"
+            src="@/assets/img/icons/facebook.png"
+            alt=""
+          />
         </a>
         <a
           class="focus:outline-none hover:bg-gray-200 border-0 rounded-3xl"
           href="https://github.com/tristanmacelli"
           target="_blank"
         >
-          <img class="p-2 w-10 h-10" src="@/assets/img/icons/github.png" alt="">
+          <img
+            class="p-2 w-10 h-10"
+            src="@/assets/img/icons/github.png"
+            alt=""
+          />
         </a>
       </div>
     </div>
@@ -52,13 +67,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'ContactSection'
-})
+  name: "ContactSection",
+});
 </script>
 
 <script lang="ts" setup>
-import SectionHead from '../components/SectionHead.vue'
+import SectionHead from "../components/SectionHead.vue";
 </script>
