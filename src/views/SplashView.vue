@@ -53,12 +53,17 @@
       <button class="btn bg-lightSand" @click="RouteToEvents">
         Upcoming Events
       </button>
+      <PdfDownloadButton
+        :pdfUrl="pdfUrl"
+        :pdfFileName="pdfFileName"
+      ></PdfDownloadButton>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { useRouter } from "vue-router";
+import PdfDownloadButton from "@/components/PdfDownloadButton.vue";
 const router = useRouter();
 
 const RouteTo = (view: string) => {
@@ -66,6 +71,9 @@ const RouteTo = (view: string) => {
 };
 const RouteToEvents = () => RouteTo("events");
 const RouteToPortfolio = () => RouteTo("portfolio");
+
+const pdfUrl = import.meta.env.VITE_RESUME_PDF_URL;
+const pdfFileName = import.meta.env.VITE_RESUME_PDF_FILENAME;
 </script>
 
 <style lang="postcss" scoped>
